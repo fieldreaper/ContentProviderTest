@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mad.vandolf.contentprovidertest.Main2Activity">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="Add Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickAddName" />
+
+    <Button
+        android:id="@+id/btnRetrieve"
+        android:text="Display Names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickDisplayNames" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:text="Delete Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickDeleteName" />
+
+    <Button
+        android:id="@+id/btnType"
+        android:text="Get Provider Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickGetType" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:clickable="false" />
+</LinearLayout>
